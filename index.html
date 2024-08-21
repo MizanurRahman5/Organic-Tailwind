@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organic</title>
+    <!-- -------font awsome cdn---- -->
+    <script src="https://kit.fontawesome.com/f376985f2e.js" crossorigin="anonymous"></script>
+
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- -------tailwind and daisyUI cdn---- -->
+     
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#da373d',
+            secondary:'#6A9739',
+          },
+          fontFamily: {
+            poppins:'Poppins',
+
+          },
+          backgroundImage:{
+            banner:"url('./images/leaf01.png')",
+
+          }
+        }
+      }
+    }
+  </script>
+
+  </head>
+  <body>
+    <!-- header -->
+    <header class="">
+        <!-- navbar start -->
+        <section class="container mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  
+                  <a class=" ">
+                    <img src="images/logo.svg" alt="">
+                  </a>
+                  
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="text-xl menu menu-horizontal px-1">
+                    <li><a class="hover:text-primary transition-colors duration-300 ease-in-out">Home</a></li>
+                    <li><a class="hover:text-primary transition-colors duration-300 ease-in-out">Everything</a></li>
+                    <li><a class="hover:text-primary transition-colors duration-300 ease-in-out">Groceries</a></li>
+                    <li><a class="hover:text-primary transition-colors duration-300 ease-in-out">About</a></li>
+                    <li><a class="hover:text-primary transition-colors duration-300 ease-in-out">Contact</a></li>
+                  </ul>
+                </div>
+                <div class=" navbar-end space-x-4">
+                  <div class="flex items-center gap-4">
+                    <h5 class="text-secondary font-bold">$10.00</h5>
+                  <i class="text-secondary fa-solid fa-cart-shopping"></i>
+                  <i class="fa-solid fa-user"></i>
+                  </div>
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <i class="fa-solid fa-bars text-xl class="hover:text-primary transition-colors duration-300 ease-in-out""></i>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 right-0 top-7 gap-4 shadow">
+                      <li><a>Home</a></li>
+                    <li><a>Everything</a></li>
+                    <li><a>Groceries</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!-- navbar End -->
+
+
+        <!-- banner start -->
+        <section class="h-[85vh] bg-banner bg-no-repeat relative bg-right-bottom">
+            <div class="h-full w-full absolute  bg-[#F8F6F4] bg-opacity-90">
+
+
+                <div class="w-9/12 py-14 mx-auto flex items-center gap-6">
+                    <!-- banner image -->
+                    <div class="flex-1">
+                        <img src="images/bannerbg.png" alt="">
+                    </div>
+                    <!-- banner conatin -->
+                    <div class="flex-1 space-y-5">
+                        <p>Best Quality Product</p>
+                        <h1 class="text-4xl font-extrabold">Join The Organic <br> Movement</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dolores, debitis ad nihil fuga vel. Enim velit obcaecati necessitatibus reiciendis!</p>
+                        <button class="btn bg-green-600 text-white font-bold"><i class="fa-solid fa-cart-shopping"></i>Shope now</button>
+                    </div>
+                </div>
+
+            </div>
+
+            
+        </section>
+        <!-- banner end -->
+
+    </header>
+    <!-- main -->
+    <main>
+        
+    </main>
+    <!-- footer -->
+    <footer></footer>
+  </body>
+</html>
